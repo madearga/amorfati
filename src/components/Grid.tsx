@@ -82,3 +82,15 @@ export default function Grid({ state, onGranularityChange, onOpenSettings }: Pro
     </div>
   );
 }
+
+      <p className="mt-auto pb-2 text-center text-xs text-zinc-600">
+        Created by{' '}
+        <a
+          href="https://argakuka.com"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-zinc-500 underline underline-offset-2 hover:text-zinc-400"
+        >
+          @argakuka
+        </a>
+      </p>

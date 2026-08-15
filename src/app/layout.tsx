@@ -3,12 +3,12 @@ import './globals.css';
 
 export const metadata: Metadata = {
   title: 'Life Grid',
-  description: 'Every box is a moment. See how many you\'ve lived — and how many remain.',
+  description: "Every box is a moment. See how many you've lived — and how many remain.",
   manifest: '/manifest.json',
+};
 
 export const viewport: Viewport = {
   themeColor: '#0d0d0d',
-};
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

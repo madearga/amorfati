@@ -1,3 +1,5 @@
+> *"I wish you can do everyday thoroughly."*
+
 # Amor Fati — Life Grid
 
 > *"Every box is a moment. See how many you've lived — and how many remain."*

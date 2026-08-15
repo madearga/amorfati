@@ -26,9 +26,9 @@ export default function Onboarding({ onComplete }: Props) {
   };
 
   return (
-    <div className="flex min-h-dvh items-center justify-center p-6">
-      <div className="w-full max-w-md">
-        <h1 className="mb-2 text-3xl font-bold">Life Grid</h1>
+    <div className="flex min-h-dvh items-center justify-center px-5 py-8">
+      <div className="w-full max-w-sm">
+        <h1 className="mb-2 text-3xl font-bold">Amor Fati</h1>
         <p className="mb-8 leading-relaxed text-zinc-400">
           Every box is a moment. See how many you&apos;ve lived — and how many remain.
         </p>
@@ -40,12 +40,12 @@ export default function Onboarding({ onComplete }: Props) {
               value={birthdate}
               onChange={(e) => setBirthdate(e.target.value)}
               required
-              className="rounded-lg border border-zinc-700 bg-zinc-800 px-3.5 py-2.5 text-base text-zinc-100"
+              className="h-12 rounded-xl border border-zinc-700 bg-zinc-800 px-4 text-zinc-100"
             />
           </label>
           <label className="flex flex-col gap-1.5 text-sm text-zinc-400">
             Life expectancy
-            <div className="flex items-center gap-2">
+            <div className="flex items-center gap-3">
               <input
                 type="number"
                 value={expectancy}
@@ -53,9 +53,9 @@ export default function Onboarding({ onComplete }: Props) {
                 min={30}
                 max={120}
                 required
-                className="w-24 rounded-lg border border-zinc-700 bg-zinc-800 px-3.5 py-2.5 text-base text-zinc-100"
+                className="h-12 w-24 rounded-xl border border-zinc-700 bg-zinc-800 px-4 text-zinc-100"
               />
-              <span>years</span>
+              <span className="text-base">years</span>
             </div>
           </label>
           <label className="flex flex-col gap-1.5 text-sm text-zinc-400">
@@ -63,7 +63,7 @@ export default function Onboarding({ onComplete }: Props) {
             <select
               value={granularity}
               onChange={(e) => setGranularity(e.target.value as Granularity)}
-              className="rounded-lg border border-zinc-700 bg-zinc-800 px-3.5 py-2.5 text-base text-zinc-100"
+              className="h-12 rounded-xl border border-zinc-700 bg-zinc-800 px-4 text-zinc-100"
             >
               <option value="day">Daily</option>
               <option value="week">Weekly</option>
@@ -77,12 +77,12 @@ export default function Onboarding({ onComplete }: Props) {
               type="time"
               value={notifyTime}
               onChange={(e) => setNotifyTime(e.target.value)}
-              className="rounded-lg border border-zinc-700 bg-zinc-800 px-3.5 py-2.5 text-base text-zinc-100"
+              className="h-12 rounded-xl border border-zinc-700 bg-zinc-800 px-4 text-zinc-100"
             />
           </label>
           <button
             type="submit"
-            className="mt-2 rounded-lg bg-blue-600 px-4 py-3 font-semibold text-white hover:bg-blue-500"
+            className="mt-3 h-12 rounded-xl bg-blue-600 text-base font-semibold text-white active:bg-blue-500"
           >
             Begin
           </button>
